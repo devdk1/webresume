@@ -238,8 +238,8 @@
 				return false;
 			}
 			sLoader.fadeIn(); 
-			
-			$.get("http://localhost:3000/send",{name: name, email_id: email_id, subject: subject, message: message},function(data){
+			// console.log(window.location.hostname);
+			$.get("https://"+window.location.hostname+"/send",{name: name, email_id: email_id, subject: subject, message: message},function(data){
 				if(data=="sent")
 				{
 	            	sLoader.fadeOut(); 
