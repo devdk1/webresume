@@ -67,11 +67,11 @@ module.exports = {
             'skill_name': 'Database',
             'skill_summary': 'Analysis and design of databases and user interfaces. Understanding of MySQL, mysqli, PDO and mysql replication, indexing, Primary Keys, Foreign Keys and Constraints. Knowing commands to create, modify and drop tables'  
           },
-          {
-            'icon_name': 'icon-paint-brush',
-            'skill_name': 'REST & SOAP APIs',
-            'skill_summary': 'Having knowledge of api '  
-          },
+          // {
+          //   'icon_name': 'icon-paint-brush',
+          //   'skill_name': 'REST & SOAP APIs',
+          //   'skill_summary': 'Having knowledge of api '  
+          // },
           {
             'icon_name': 'icon-toggles',
             'skill_name': 'Shopify Multivendor Marketplace',
