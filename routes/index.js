@@ -20,7 +20,7 @@ router.get('/ramjeet', function(req, res, next) {
 });
 
 const nodemailer = require('nodemailer');
-
+// console.log(process.env.GMAIL_PWD);
 router.get('/send', function(req, res, next) {
   // console.log("API key : "+sgMail);
   // sgMail.setApiKey(SENDGRID_API_KEY);
@@ -38,18 +38,18 @@ router.get('/send', function(req, res, next) {
   // res.end("sent");
   nodemailer.createTestAccount((err, account) => {
       let transporter = nodemailer.createTransport({
-          host: 'smtp.ethereal.email',
+          host: 'smtp.gmail.com',
           port: 587,
-          secure: false, // true for 465, false for other ports
+          secure: false, // true for 587, false for other ports
           auth: {
-              user: 'melfocua5bmxr6um@ethereal.email', // generated ethereal user
-              pass: 'Q2j47vhsPuJ5byaJDf' // generated ethereal password
+              user: 'devkrishnalamror@gmail.com', 
+              pass: process.env.GMAIL_PWD
           }
       });
       let mailOptions = {
-          from: req.query.email_id, // sender address
+          from: req.query.name+"  <"+req.query.email_id+">", // sender address
           to: 'devkrishnalamror@gmail.com', // list of receivers
-          subject: req.query.subject, // Subject line
+          subject: req.query.subject+" from email "+req.query.email_id, // Subject line
           text: 'Hello Dev', // plain text body
           html: '<h4>Hello '+user+',</h4>'+
                     '<div class="wr_margin_right_20">'+req.query.message+'</div>'+
@@ -64,7 +64,4 @@ router.get('/send', function(req, res, next) {
       res.end("sent");
   });
 });
-
-
-
 module.exports = router;

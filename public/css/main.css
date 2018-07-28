@@ -1,5 +1,4 @@
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 html {
 	font-size: 10px;
@@ -29,10 +28,10 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #000000;
 }
 a, a:visited {
-	color: #000000;
+	color: #129EDF;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -2039,9 +2038,9 @@ header .logo a {
 .services-list h3 {
 	color: #FFFFFF;
 }
-.services-list .desc {
+/* .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /* pagination */
 /*
@@ -2351,6 +2350,9 @@ header .logo a {
 }
 .contact-info h5 {
 	color: #53b6d0;
+}
+.contact-info p {
+	color: #FFFFFF;
 }
 .margin-top-4{
 	margin-top: 4rem;

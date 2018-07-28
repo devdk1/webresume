@@ -67,21 +67,21 @@ module.exports = {
             'skill_name': 'Database',
             'skill_summary': 'Analysis and design of databases and user interfaces. Understanding of MySQL, mysqli, PDO and mysql replication, indexing, Primary Keys, Foreign Keys and Constraints. Knowing commands to create, modify and drop tables'  
           },
-          // {
-          //   'icon_name': 'icon-paint-brush',
-          //   'skill_name': 'REST & SOAP APIs',
-          //   'skill_summary': 'Having knowledge of api '  
-          // },
+          {
+            'icon_name': 'icon-paint-brush',
+            'skill_name': 'Programming Languages & Operating System',
+            'skill_summary': 'Having knowledge of C, C++, JavaScript, PHP, Jquery and JSON. Object oriented Analysis and Design, Waterfall Approach. Familiar with Windows, Ubuntu and Mac Operating syatems.'  
+          },
           {
             'icon_name': 'icon-toggles',
             'skill_name': 'Shopify Multivendor Marketplace',
             'skill_summary': 'Converts any store to a full fledged marketplace, Per sale commission management for merchant or admin, Invoice management for sellers as well as customers.'  
+          },
+          {
+            'icon_name': 'icon-image',
+            'skill_name': 'Game Development',
+            'skill_summary': 'Developed C++ based First Person shooter PC game using Unity 3D 4.3.2. Used a very simple “Artificial Intelligence“ script written on MonoDevelop.(Academic Project)'  
           }
-          // {
-          //   'icon_name': 'icon-image',
-          //   'skill_name': 'Web Development',
-          //   'skill_summary': 'Full stack web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal (Ask a question), and connect Shopify APIs with Microsoft\'s Dynamic Nav. Passionate about software architecture.'  
-          // },
           // {
           //   'icon_name': 'icon-chat',
           //   'skill_name': 'Web Development',
