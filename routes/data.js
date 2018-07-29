@@ -105,5 +105,8 @@ module.exports = {
   },
   'ramjeet': {
 
+  },
+  '404': {
+    'title': 'Dev krishan\'s Resume'
   }
 }

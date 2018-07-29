@@ -27,6 +27,7 @@ build/Release
 node_modules
 things to buy
 .DS_Store
+.env
 
 # Debug log from npm
 npm-debug.log

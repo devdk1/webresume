@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 html {
 	font-size: 10px;
@@ -1204,6 +1205,15 @@ header .logo a {
 	min-height: 500px;
 	display: table;
 	position: relative;
+	text-align: center;
+}
+#f_0_f {
+	background: #FFF url(../images/common/404.gif) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: 800px 600px;
+	background-attachment: fixed;
+	display: table;
 	text-align: center;
 }
 .intro-overlay {
