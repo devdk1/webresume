@@ -38,6 +38,7 @@ router.get('/send', function(req, res, next) {
   // sgMail.send(msg);
   // console.log(sgMail.send(msg));
   // res.end("sent");
+  console.log(process.env.GMAIL_PWD);
   nodemailer.createTestAccount((err, account) => {
       let transporter = nodemailer.createTransport({
           host: 'smtp.gmail.com',
