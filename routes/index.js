@@ -16,15 +16,13 @@ router.get('/devkrishan', function(req, res, next) {
   res.render('devkrishan', data['devkrishan']);
   user = 'Dev krishan';
 });
+
 router.get('/ramjeet', function(req, res, next) {
   res.render('ramjeet', { title: 'Ramjeet Saran\'s Resume' });
   user = 'Ramjeet Saran';  
 });
-router.get('*', function(req, res){
-    res.render('404', data['devkrishan']);
-});
+
 const nodemailer = require('nodemailer');
-// console.log(process.env.GMAIL_PWD);
 router.get('/send', function(req, res, next) {
   // console.log("API key : "+sgMail);
   // sgMail.setApiKey(SENDGRID_API_KEY);
@@ -67,5 +65,8 @@ router.get('/send', function(req, res, next) {
       });
       res.end("sent");
   });
+});
+router.get('*', function(req, res){
+    res.render('404', data['devkrishan']);
 });
 module.exports = router;
