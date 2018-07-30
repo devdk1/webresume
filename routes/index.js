@@ -38,21 +38,20 @@ router.get('/send', function(req, res, next) {
   // sgMail.send(msg);
   // console.log(sgMail.send(msg));
   // res.end("sent");
-  console.log(process.env.GMAIL_PWD);
   nodemailer.createTestAccount((err, account) => {
       let transporter = nodemailer.createTransport({
-          host: 'smtp.gmail.com',
+          host: 'smtp.mailgun.org',
           port: 587,
-          secure: false, // true for 587, false for other ports
+          secure: false,
           auth: {
-              user: 'devkrishnalamror@gmail.com', 
-              pass: process.env.GMAIL_PWD
+              user: process.env.MAILGUN_USER, 
+              pass: process.env.MAILGUN_PWD
           }
       });
       let mailOptions = {
-          from: req.query.name+"  <"+req.query.email_id+">", // sender address
+          from: req.query.email_id, // sender address
           to: 'devkrishnalamror@gmail.com', // list of receivers
-          subject: req.query.subject+" from email "+req.query.email_id, // Subject line
+          subject: req.query.subject, // Subject line
           text: 'Hello Dev', // plain text body
           html: '<h4>Hello '+user+',</h4>'+
                     '<div class="wr_margin_right_20">'+req.query.message+'</div>'+
