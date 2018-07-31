@@ -19,6 +19,9 @@ html {
 	html {
 		font-size: 9.411764705882353px;
 	}
+	#f_0_f {
+		background-size: 450px 600px !important;
+	}
 }
 
 html, body {
